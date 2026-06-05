@@ -101,7 +101,14 @@ The engine supports different fidelity levels via the `--mode` flag:
 ```bash
 python stream_server.py --mode 5 --cols 240 --rows 100
 ```
+### 📐 Resolution & Auto-Scaling
+By default, you only need to specify the width (`--cols`). ASCILINE will automatically calculate the correct `--rows` based on the source video's aspect ratio to prevent stretching.
 
+- **ASCII Mode Recommended:** `--cols 200` to `--cols 240` (Best balance of text detail and 30-40 FPS performance).
+- **Pixel Mode Recommended:** `--cols 320` to `--cols 400` (Extremely fast, easily hits 60+ FPS,close to 360p video stream).
+
+python stream_server.py video.mp4 --mode 5 --cols 240
+# Terminal will show: [AUTO] 1920x1080 → grid 240x67
 ### Server-Side Volume Control
 Volume is controlled at the server level via the `--vol` flag (scale 0–5).
 When set to `0`, the audio engine (FFmpeg) **never runs**, saving CPU and bandwidth.
