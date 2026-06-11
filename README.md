@@ -123,6 +123,7 @@ By default, you only need to specify the width (`--cols`). ASCILINE will automat
 
 - **ASCII Mode Recommended:** `--cols 200` to `--cols 240` (Best balance of text detail and cinematic 30 FPS performance).
 - **Pixel Mode Recommended:** `--cols 600` to `--cols 900` (Provides near-HD visual quality. Performance heavily depends on your machine's CPU/VRAM).
+- > **Smart Defaults:** If you do not specify a `--cols` value, ASCILINE automatically defaults to `450` when Pixel Mode is enabled, and `200` for standard ASCII text mode. 
 - > ⚠️ **Hardware Limits & A/V Sync:** If you push the `--cols` too high for your specific hardware (e.g., `1350` on a laptop vs a gaming desktop), the Python backend won't be able to encode and send the massive frames fast enough. When the video stream lags behind the audio, you will experience A/V desync (audio finishing early). If this happens, simply lower your `--cols` value!
 ```bash
 python stream_server.py video.mp4 --mode 5 --cols 240
@@ -145,12 +146,12 @@ python stream_server.py video.mp4 --cols 220 --vol 3   # Loud
 ```
 
 ### Playlist Format (`playlist.json`)
-Each entry can override the global `--mode`, `--pixel`, and `--vol` defaults:
+Each entry can override the global `--mode`, `--pixel`, `--vol`, and `--cols` defaults:
 ```json
 [
     { "video": "intro.mp4",  "mode": 1, "vol": 1 },
-    { "video": "main.mp4",   "mode": 5, "pixel": true, "vol": 3 },
-    { "video": "outro.mp4",  "mode": 3, "pixel": false, "vol": 2 }
+    { "video": "main.mp4",   "mode": 5, "pixel": true, "vol": 3, "cols": 520 },
+    { "video": "outro.mp4",  "mode": 3, "vol": 2, "cols": 200 }
 ]
 ```
 Video paths are resolved automatically — the engine checks the project root and the `videos/` subfolder, so you can write just the filename.
