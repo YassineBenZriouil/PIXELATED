@@ -465,9 +465,11 @@ HELP_TEXT = "\033[1;37m" + """
 ║  \033[33m─── Playback ───\033[1;37m                                ║
 ║  \033[32m--vol\033[1;37m   \033[35m0-5\033[1;37m    Volume (0=mute, 1=normal, 5=2x)  ║
 ║  \033[32m--loop\033[1;37m         Loop the playlist infinitely     ║
+║  \033[32m--quality\033[1;37m \033[35mlvl\033[1;37m  Codec quality (lossless,low,etc) ║
 ║                                                   ║
 ║  \033[33m─── Server ───\033[1;37m                                  ║
 ║  \033[32m--port\033[1;37m  \033[35mN\033[1;37m      Server port    (default: 8000)    ║
+║  \033[32m--debug\033[1;37m        Show bandwidth stats (RAW/WIRE)  ║
 ║                                                   ║
 ╚═══════════════════════════════════════════════════╝
 """ + "\033[0m"
