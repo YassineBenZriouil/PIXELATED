@@ -74,7 +74,7 @@ You can append the `--debug` flag when launching the server to see live bandwidt
 > `experiments/check_vectors.js`), and a live `adaptive`-vs-`legacy` WebSocket
 > diff (`experiments/test_e2e.js`). Generate the test clips with
 > `experiments/make_test_clips.sh`. (A fuller mutation-test + Autobahn
-> conformance harness and CI workflow exist too — happy to add them if useful.)
+
 
 ## 📦 Installation
 
