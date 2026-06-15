@@ -205,26 +205,25 @@ Video paths are resolved automatically — the engine checks the project root an
 ASCILINE is distributed under the MIT License, but with a strict ethical guardrail.
 Because this engine bypasses standard browser constraints and ad-blockers (by rendering pure text instead of video), we strictly prohibit its use by ad-networks to serve unblockable advertisements. 
 
-See the [LICENSE](LICENSE) file for the full text, which includes the **ANTI-ADVERTISEMENT RESTRICTION** clause.
-
 ### 🟢 Live Interactive Showcase
 Experience the ASCILINE engine running live directly in your browser with multiple rendering modes. 👉 **[Try it out at asciline.dev](https://www.asciline.dev)**
+
+> **Note for developers:** To achieve infinite scalability and zero server costs, this specific showcase uses the pre-compiled `.ascf` static architecture. You can generate your own static files using the newly added `Compiler.py`!
 
 ## 📈 Star History
 [![Star History Chart](https://api.star-history.com/svg?repos=YusufB5/ASCILINE&type=Date)](https://star-history.com/#YusufB5/ASCILINE&Date)
 
 ### ☕ Support the Project ❤️ 
-
 If you find this project helpful, you can support me by donating crypto:
-
 * **Solana (SOL / USDC):** `H1wSQAhjgsu7AxenF4e5ZBYiBjkhDLVzkKaZuVPcrE14`
 * **Ethereum (ETH / USDT):** `0x85B2f970045c0F7c282089Ab6CF897C20230e086`
 * **Bitcoin (BTC):** `bc1qvtcl55v54gkzwnp2zxn70usea3gf5ncncqa0fv`
 
 ## 📜 License & Ethical Guardrails
 
-**MIT License (with Anti-Ad Restriction)**
+ASCILINE is distributed under the MIT License, but with a strict ethical guardrail. Because this engine bypasses standard browser constraints and ad-blockers (by rendering pure text instead of video), we strictly prohibit its use by ad-networks to serve unblockable advertisements. 
 
-## contact & questions:
+See the [LICENSE](LICENSE) file for the full text, which includes the **ANTI-ADVERTISEMENT RESTRICTION** clause.
 
+## 📬 Contact & Questions
 [asciline.engine@gmail.com](mailto:asciline.engine@gmail.com)
